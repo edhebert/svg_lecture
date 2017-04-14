@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ed Hebert - DGMD E-27 Assignment 3 "Icon" </title>
+
+    <!-- This presentation page demonstrates the scalability of SVGs vs. raster images. It leads to a page demonstrating that SVG elements can be manipulated in CSS. Click the image on this page to be taken to the next page! -->
+    
+    <style>
+
+        @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+        body {
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+
+          /* flexbox shorthand syntax */
+          -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap; 
+
+          justify-content: center;      
+        }
+
+        .bigbulb {
+          height: 600px;
+          width: 600px;
+        }
+
+        .bigbulb img {
+          min-width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+  <h1>SVG Graphics and CSS</h1>
+  <h2>Scalable vectors mean no "jaggies"!</h2>
+<div class="container">  
+  <figure class="bigbulb">
+    <a href="hoverbulb.html"><img src="bulb.svg" alt="bulb svg"></a>
+    <figcaption>
+      bulb.svg<br>3K
+    </figcaption>
+  </figure>
+  
+  <figure class="bigbulb">
+    <a href="hoverbulb.html"><img src="bulb.png" alt="bulb png"></a>
+    <figcaption>
+      bulb.png<br>5K
+    </figcaption>
+  </figure>
+</div>
+</body>
+</html>

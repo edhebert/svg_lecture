@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ed Hebert - DGMD E-27 Assignment 3 "Icon" </title>
+
+    <!-- This presentation page demonstrates the small footprint of SVG, and is a lead-in to the next page demonstrating
+    scalability vs. raster images. Click any of the images on this page to be taken to the next page. -->
+
+    <style>
+
+        @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+        body {
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+          height: 90vh; 
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+
+          justify-content: center;   
+          
+          -webkit-align-items: center;
+          align-items: center;   
+        }
+
+        .smallbulb {
+          height: 100px;
+          width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+  
+<div class="container">  
+  <h1>SVG Graphics and CSS</h1>
+  <figure class="smallbulb">
+    <a href="bigbulb.html"><img src="bulb.svg" alt="bulb svg"></a>
+    <figcaption>
+      bulb.svg<br>3K
+    </figcaption>
+  </figure>
+  
+  <figure class="smallbulb">
+    <a href="bigbulb.html"><img src="bulb.png" alt="bulb png"></a>
+    <figcaption>
+      bulb.png<br>5K
+    </figcaption>
+  </figure>
+</div>
+</body>
+</html>
